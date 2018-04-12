@@ -1,0 +1,50 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    font-family: 'Tajawal', sans-serif;    
+    background: lightblue;
+}
+
+#messages {
+    background: rgb(241, 240, 240);
+    list-style-type: none; 
+    margin: 50px auto 0 auto; 
+    padding: 0; 
+    width:50%; 
+    height:450px; 
+    border:2px solid black;
+}
+#messages li {
+    padding: 5px 10px;
+}
+#messages li:nth-child(odd) {
+    background: rgb(192, 189, 189);
+}
+
+form {
+    background: rgb(241, 240, 240);
+    border:2px solid black;
+    padding: 3px;
+    position: fixed; 
+    bottom: 0; 
+    width: 50%; 
+    margin:0 0 150px 25%;
+}
+form input {
+    font-family: 'Tajawal', sans-serif; 
+    background: rgb(241, 240, 240);
+    border: 0;
+    padding: 10px; 
+    width: 90%;
+    margin-right: .5%;
+}
+form button { 
+    font-weight: bold;
+    width: 9%;
+    background: rgb(7, 176, 228);
+    border: none;
+    padding: 11px
+}
