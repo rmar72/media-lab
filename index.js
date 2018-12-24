@@ -9,7 +9,9 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', (req, res) => res.sendFile(__dirname + '/index.html') );
 
 io.on('connection', socket => {
-    socket.on('chat message', msg => io.emit('chat message', msg) );
+
+    socket.on('chat message', data => io.emit('chat message', data) );
+
     socket.on('disconnect', ()=>{});
 });
 
